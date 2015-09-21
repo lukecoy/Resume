@@ -10,7 +10,7 @@
 
 % moderncv themes
 \moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
-\moderncvcolor{green}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\moderncvcolor{grey}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
 %\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
 %\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
 
@@ -19,7 +19,7 @@
 %\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
 
 % adjust the page margins
-\usepackage[scale=0.75]{geometry}
+\usepackage[scale=0.8]{geometry}
 %\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
 %\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
@@ -55,7 +55,7 @@
 
 \section{Education}
 \cventry{2011--2016}{Software Engineering (B.S.)}{Rochester Institute of Technology}{}
-{\textit{GPA: 3.6}}{R.I.T Honors Program, National Society of Black Engineers, Sigma Alpha Mu (Delta Omega), R.I.T Society of Software Engineers}  % arguments 3 to 6 can be left empty
+{\textit{GPA: 3.6}}{Honors Program,  National Society of Black Engineers, Sigma Alpha Mu, Society of Software Engineers}  % arguments 3 to 6 can be left empty
 
 
 %\section{Master thesis}
@@ -63,20 +63,20 @@
 %\cvitem{supervisors}{Supervisors}
 %\cvitem{description}{Short thesis abstract}
 
-\section{Work}
+\section{Industry}
 %\subsection{Co-op / Internships}
-\cventry{2014-2015}{HubSpot}{Software Engineer}{Boston MA}{}{
+\cventry{2014-2015}{HubSpot}{Software Engineer Co-op}{Boston MA}{}{
 \begin{itemize}%
-\item Developed and designed front / backend business operation web applications
+\item Developed large-data distributed programs and service oriented backend / frontend applications for business operations
   \begin{itemize}%
-  \item Coffeescript, Sass, Jade, Backbone, Jasmine, Jade, Grunt, RequireJS, Bootstrap, Java, Guice, Guava, Mockito, JUnit, Salesforce, Maven, Jenkins, Dropwizard, MySQL
+  \item Hadoop, Apache Spark, Coffeescript, Sass, Jade, Backbone, Jasmine, Jade, Grunt, Bootstrap, Java, Guice, Salesforce, Dropwizard, MySQL
   %\item Sub-achievement (b), with sub-sub-achievements (don't do this!);
     %\begin{itemize}
     %\item Sub-sub-achievement i;
     \end{itemize}
   \end{itemize}
 }
-\cventry{2013}{Oracle}{Software Engineer}{Philadelphia PA}{}{
+\cventry{2013}{Oracle}{Software Engineer Co-op}{Philadelphia PA}{}{
 \begin{itemize}%
 \item Developed and designed backend workflow tools for Primavera project software
   \begin{itemize}%
@@ -87,7 +87,7 @@
     \end{itemize}
   \end{itemize}
 }
-\cventry{2010 - 2011}{University of Rochester}{Intern Software Developer}{Rochester NY}{}{
+\cventry{2010 - 2011}{University of Rochester}{Software Developer Intern}{Rochester NY}{}{
 \begin{itemize}%
 \item Developed and designed desktop graphing tool for experimental data
   \begin{itemize}%
@@ -100,23 +100,24 @@
 }
 
 \section{Skills}
-\cvitem{Languages}{\textbf{\textit{Experienced: }}Java, JavaScript, Jade, Sass \newline{}
-  \textbf{\textit{Familiar: }}Python, C, Apex
+\cvitem{Languages}{\textbf{\textit{Experienced: }}Java, JavaScript \newline{}
+  \textbf{\textit{Familiar: }}Python, Jade, Sass, Apex
 }
 
-\cvitem{Tools}{\textbf{\textit{Experienced: }}MySQL, OracleDB, Git \newline{}
-  \textbf{\textit{Familiar: }}MongoDB, Mercurial
+\cvitem{Tools}{\textbf{\textit{Experienced: }}PostgreSql, Git \newline{}
+  \textbf{\textit{Familiar: }}Mercurial, MongoDB
 }
-\cvitem{Frameworks}{\textbf{\textit{Experienced: }}Backbone, Grunt, Maven, Guava, JDBI, RequireJS \newline{}
-  \textbf{\textit{Familiar: }}ASP, Jackson, Guice, Jersey, Jasmine
+\cvitem{Frameworks}{\textbf{\textit{Experienced: }}Backbone, Gulp, Guava, JDBI, Guice, Gradle \newline{}
+  \textbf{\textit{Familiar: }}Apache Spark, Hadoop, Maven, Jackson, Jersey, Jasmine, Grunt, SemanticUI, Express, Node
 }
 
 \section{Projects}
-\cventry{}{Personal Website \textnormal{\hfill{github.com/lukecoy/src.lukecoy.github.io}}}{}{}{}{
+
+\cventry{}{Discogs}{github.com/lukecoy/Discogs}{}{}{
 \begin{itemize}%
-\item Responsive static website with emphasis on simplicity
+\item Java web service exposing Discogs.com music metadata dumps 
   \begin{itemize}%
-  \item SemanticUI, Sass, Coffeescript, HTML, Grunt, Yeoman
+  \item Dropwizard (Jackson, JDBI, Jersey, Jetty), Guice, Gradle, PostgreSql  
   %\item Sub-achievement (b), with sub-sub-achievements (don't do this!);
     %\begin{itemize}
     %\item Sub-sub-achievement i;
@@ -124,75 +125,30 @@
 \end{itemize}
 }
 
-%\section{Projects}
-%\cvitemwithcomment{lukecoy.com}{ Yeoman}{github.com/lukecoy/src.lukecoy.github.io}
-%\cvitemwithcomment{Language 2}{Skill level}{Comment}
-%A\cvitemwithcomment{Language 3}{Skill level}{Comment}
+\cventry{}{Trendy}{github.com/lukecoy/Trendy}{}{}{
+\begin{itemize}%
+\item JavaScript web service exposing and archiving trending album data from music websites
+  \begin{itemize}%
+  \item Node, Express, Gulp, MongoDB, NPM
+  %\item Sub-achievement (b), with sub-sub-achievements (don't do this!);
+    %\begin{itemize}
+    %\item Sub-sub-achievement i;
+  \end{itemize}
+\end{itemize}
+}
 
-%\section{Computer skills}
-%\cvdoubleitem{category 1}{XXX, YYY, ZZZ}{category 4}{XXX, YYY, ZZZ}
-%\cvdoubleitem{category 2}{XXX, YYY, ZZZ}{category 5}{XXX, YYY, ZZZ}
-%\cvdoubleitem{category 3}{XXX, YYY, ZZZ}{category 6}{XXX, YYY, ZZZ}
+\cventry{}{Personal Website}{github.com/lukecoy/src.github.lukecoy.io}{}{}{
+\begin{itemize}%
+\item Responsive static website with emphasis on simplicity
+  \begin{itemize}%
+  \item SemanticUI, Sass, Coffeescript, Jade, Grunt, Yeoman
+  %\item Sub-achievement (b), with sub-sub-achievements (don't do this!);
+    %\begin{itemize}
+    %\item Sub-sub-achievement i;
+  \end{itemize}
+\end{itemize}
+}
 
-%\section{Interests}
-%\cvitem{hobby 1}{Description}
-%\cvitem{hobby 2}{Description}
-%\cvitem{hobby 3}{Description}
-
-%\section{Extra 1}
-%\cvlistitem{Item 1}
-%\cvlistitem{Item 2}
-%\cvlistitem{Item 3. This item is particularly long and therefore normally spans over several lines. Did you notice the indentation when the line wraps?}
-
-%\section{Extra 2}
-%\cvlistdoubleitem{Item 1}{Item 4}
-%\cvlistdoubleitem{Item 2}{Item 5\cite{book1}}
-%\cvlistdoubleitem{Item 3}{Item 6. Like item 3 in the single column list before, this item is particularly long to wrap over several lines.}
-
-%\section{Skills}
-%\begin{cvcolumns}
-%  \cvcolumn{Languages}{\begin{itemize}\item Person 1\item Person %2\item Person 3\end{itemize}}
-%  \cvcolumn{Tools}{Amongst others:\begin{itemize}\item Person 1, %and\item Person 2\end{itemize}(more upon request)}
-%  \cvcolumn[0.5]{Frameworks}{\textit{That} person, and \textbf{those} also (all available upon request).}
-%\end{cvcolumns}
-
-% Publications from a BibTeX file without multibib
-%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
-%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
-\nocite{*}
-\bibliographystyle{plain}
-\bibliography{publications}                        % 'publications' is the name of a BibTeX file
-
-% Publications from a BibTeX file using the multibib package
-%\section{Publications}
-%\nocitebook{book1,book2}
-%\bibliographystylebook{plain}
-%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
-%\nocitemisc{misc1,misc2,misc3}
-%\bibliographystylemisc{plain}
-%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
-
-\clearpage
-%-----       letter       ---------------------------------------------------------
-% recipient data
-\recipient{Company Recruitment team}{Company, Inc.\\123 somestreet\\some city}
-\date{January 01, 1984}
-\opening{Dear Sir or Madam,}
-\closing{Yours faithfully,}
-\enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
-\makelettertitle
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper neque sit amet lectus facilisis sed luctus nisl iaculis. Vivamus at neque arcu, sed tempor quam. Curabitur pharetra tincidunt tincidunt. Morbi volutpat feugiat mauris, quis tempor neque vehicula volutpat. Duis tristique justo vel massa fermentum accumsan. Mauris ante elit, feugiat vestibulum tempor eget, eleifend ac ipsum. Donec scelerisque lobortis ipsum eu vestibulum. Pellentesque vel massa at felis accumsan rhoncus.
-
-Suspendisse commodo, massa eu congue tincidunt, elit mauris pellentesque orci, cursus tempor odio nisl euismod augue. Aliquam adipiscing nibh ut odio sodales et pulvinar tortor laoreet. Mauris a accumsan ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse vulputate sem vehicula ipsum varius nec tempus dui dapibus. Phasellus et est urna, ut auctor erat. Sed tincidunt odio id odio aliquam mattis. Donec sapien nulla, feugiat eget adipiscing sit amet, lacinia ut dolor. Phasellus tincidunt, leo a fringilla consectetur, felis diam aliquam urna, vitae aliquet lectus orci nec velit. Vivamus dapibus varius blandit.
-
-Duis sit amet magna ante, at sodales diam. Aenean consectetur porta risus et sagittis. Ut interdum, enim varius pellentesque tincidunt, magna libero sodales tortor, ut fermentum nunc metus a ante. Vivamus odio leo, tincidunt eu luctus ut, sollicitudin sit amet metus. Nunc sed orci lectus. Ut sodales magna sed velit volutpat sit amet pulvinar diam venenatis.
-
-Albert Einstein discovered that $e=mc^2$ in 1905.
-
-\[ e=\lim_{n \to \infty} \left(1+\frac{1}{n}\right)^n \]
-
-\makeletterclosing
 
 %\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
 \end{document}
